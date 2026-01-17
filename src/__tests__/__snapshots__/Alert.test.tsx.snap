@@ -1,0 +1,298 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Alert > Título > snapshot: com título 1`] = `
+<div>
+  <div
+    class="relative p-4 rounded-lg border flex items-start gap-3 animate-[slideDown_0.2s_ease-out] bg-red-900/20 border-red-500/50 text-red-400"
+    role="alert"
+  >
+    <span
+      aria-hidden="true"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-alert w-5 h-5 flex-shrink-0"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="8"
+          y2="12"
+        />
+        <line
+          x1="12"
+          x2="12.01"
+          y1="16"
+          y2="16"
+        />
+      </svg>
+    </span>
+    <div
+      class="flex-1 min-w-0"
+    >
+      <p
+        class="font-semibold mb-1"
+      >
+        Título do Alerta
+      </p>
+      <div
+        class="text-sm"
+      >
+        Mensagem de conteúdo
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert > Variantes > snapshot: variante error 1`] = `
+<div>
+  <div
+    class="relative p-4 rounded-lg border flex items-start gap-3 animate-[slideDown_0.2s_ease-out] bg-red-900/20 border-red-500/50 text-red-400"
+    role="alert"
+  >
+    <span
+      aria-hidden="true"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-alert w-5 h-5 flex-shrink-0"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="8"
+          y2="12"
+        />
+        <line
+          x1="12"
+          x2="12.01"
+          y1="16"
+          y2="16"
+        />
+      </svg>
+    </span>
+    <div
+      class="flex-1 min-w-0"
+    >
+      <div
+        class="text-sm"
+      >
+        Erro ao processar
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert > Variantes > snapshot: variante info 1`] = `
+<div>
+  <div
+    class="relative p-4 rounded-lg border flex items-start gap-3 animate-[slideDown_0.2s_ease-out] bg-blue-900/20 border-blue-500/50 text-blue-400"
+    role="alert"
+  >
+    <span
+      aria-hidden="true"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-info w-5 h-5 flex-shrink-0"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="M12 16v-4"
+        />
+        <path
+          d="M12 8h.01"
+        />
+      </svg>
+    </span>
+    <div
+      class="flex-1 min-w-0"
+    >
+      <div
+        class="text-sm"
+      >
+        Informação importante
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert > Variantes > snapshot: variante success 1`] = `
+<div>
+  <div
+    class="relative p-4 rounded-lg border flex items-start gap-3 animate-[slideDown_0.2s_ease-out] bg-emerald-900/20 border-emerald-500/50 text-emerald-400"
+    role="alert"
+  >
+    <span
+      aria-hidden="true"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-check w-5 h-5 flex-shrink-0"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="m9 12 2 2 4-4"
+        />
+      </svg>
+    </span>
+    <div
+      class="flex-1 min-w-0"
+    >
+      <div
+        class="text-sm"
+      >
+        Operação realizada com sucesso
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert > Variantes > snapshot: variante warning 1`] = `
+<div>
+  <div
+    class="relative p-4 rounded-lg border flex items-start gap-3 animate-[slideDown_0.2s_ease-out] bg-amber-900/20 border-amber-500/50 text-amber-400"
+    role="alert"
+  >
+    <span
+      aria-hidden="true"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-triangle-alert w-5 h-5 flex-shrink-0"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+        />
+        <path
+          d="M12 9v4"
+        />
+        <path
+          d="M12 17h.01"
+        />
+      </svg>
+    </span>
+    <div
+      class="flex-1 min-w-0"
+    >
+      <div
+        class="text-sm"
+      >
+        Atenção: verifique os dados
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert > Ícone > snapshot: com ícone customizado 1`] = `
+<div>
+  <div
+    class="relative p-4 rounded-lg border flex items-start gap-3 animate-[slideDown_0.2s_ease-out] bg-amber-900/20 border-amber-500/50 text-amber-400"
+    role="alert"
+  >
+    <span
+      aria-hidden="true"
+    >
+      <span>
+        ⚡
+      </span>
+    </span>
+    <div
+      class="flex-1 min-w-0"
+    >
+      <div
+        class="text-sm"
+      >
+        Com ícone customizado
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert > Ícone > snapshot: sem ícone 1`] = `
+<div>
+  <div
+    class="relative p-4 rounded-lg border flex items-start gap-3 animate-[slideDown_0.2s_ease-out] bg-blue-900/20 border-blue-500/50 text-blue-400"
+    role="alert"
+  >
+    <div
+      class="flex-1 min-w-0"
+    >
+      <div
+        class="text-sm"
+      >
+        Alerta sem ícone
+      </div>
+    </div>
+  </div>
+</div>
+`;

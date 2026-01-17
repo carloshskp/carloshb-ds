@@ -1,0 +1,80 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > Estado de Loading > snapshot: estado loading 1`] = `
+<div>
+  <button
+    class="inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-accent-emerald to-accent-lime text-zinc-900 shadow-ds-soft hover:brightness-105 px-4 py-2 text-base"
+    disabled=""
+  >
+    <span
+      aria-hidden="true"
+      class="inline-block h-4 w-4 animate-spin rounded-full border-2 border-border-soft border-t-current"
+    />
+    <span
+      class="sr-only"
+    >
+      Carregando
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button > Renderização > snapshot: variante destructive 1`] = `
+<div>
+  <button
+    class="inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed bg-destructive text-destructive-foreground hover:brightness-110 px-4 py-2 text-base"
+  >
+    <span>
+      Destructive
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button > Renderização > snapshot: variante ghost 1`] = `
+<div>
+  <button
+    class="inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed text-text-zinc-200 hover:bg-surface-soft/60 px-4 py-2 text-base"
+  >
+    <span>
+      Ghost
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button > Renderização > snapshot: variante outlined 1`] = `
+<div>
+  <button
+    class="inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed border border-accent-emerald bg-gradient-to-r from-accent-emerald to-accent-lime bg-clip-text text-transparent hover:border-accent-lime hover:bg-emerald-500-alpha-15 [&>span[aria-hidden="true"]_svg]:stroke-accent-emerald [&>span[aria-hidden="true"]_svg]:fill-accent-emerald px-4 py-2 text-base"
+  >
+    <span>
+      Outlined
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button > Renderização > snapshot: variante primary (padrão) 1`] = `
+<div>
+  <button
+    class="inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-accent-emerald to-accent-lime text-zinc-900 shadow-ds-soft hover:brightness-105 px-4 py-2 text-base"
+  >
+    <span>
+      Primary Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button > Renderização > snapshot: variante secondary 1`] = `
+<div>
+  <button
+    class="inline-flex items-center justify-center gap-2 rounded-md font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed border border-border-soft bg-surface-soft text-text-zinc-200 hover:bg-surface-glass px-4 py-2 text-base"
+  >
+    <span>
+      Secondary
+    </span>
+  </button>
+</div>
+`;

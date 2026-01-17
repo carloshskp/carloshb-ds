@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Heading > Snapshots > snapshot: h1 com size 1`] = `
+<div>
+  <h1
+    class="font-semibold text-lg text-text-zinc-100"
+  >
+    Heading H1 Large
+  </h1>
+</div>
+`;
+
+exports[`Heading > Snapshots > snapshot: h2 padrão 1`] = `
+<div>
+  <h2
+    class="font-semibold text-3xl text-text-zinc-100"
+  >
+    Heading H2
+  </h2>
+</div>
+`;
+
+exports[`Label > snapshot: label padrão 1`] = `
+<div>
+  <label
+    class="font-medium block text-sm text-text-zinc-200"
+  >
+    Campo obrigatório
+  </label>
+</div>
+`;
+
+exports[`Paragraph > snapshot: parágrafo padrão 1`] = `
+<div>
+  <p
+    class="text-base text-text-zinc-200"
+  >
+    Este é um parágrafo de exemplo com texto normal.
+  </p>
+</div>
+`;
+
+exports[`Text > snapshot: text com variante 1`] = `
+<div>
+  <span
+    class="text-sm text-text-zinc-400"
+  >
+    Texto secundário
+  </span>
+</div>
+`;
+
+exports[`Text > snapshot: text padrão 1`] = `
+<div>
+  <span
+    class="text-base text-text-zinc-200"
+  >
+    Texto simples
+  </span>
+</div>
+`;

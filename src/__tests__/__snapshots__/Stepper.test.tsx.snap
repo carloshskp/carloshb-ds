@@ -1,0 +1,266 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Stepper > Orientação > snapshot: orientação horizontal 1`] = `
+<div>
+  <div
+    aria-label="Progresso do formulário"
+    class="flex items-center justify-center flex-row gap-4"
+    role="navigation"
+  >
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-current="step"
+        aria-label="Passo 1: Atual"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-gradient-to-br from-accent-emerald to-accent-lime border-2 border-emerald-500-alpha-60 text-text-zinc-100 shadow-[0_0_20px_hsl(var(--ds-emerald-500-alpha-30))] w-12 h-12 text-base"
+      >
+        1
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 2: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        2
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 3: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stepper > Orientação > snapshot: orientação vertical 1`] = `
+<div>
+  <div
+    aria-label="Progresso do formulário"
+    class="flex items-center justify-center flex-col gap-4"
+    role="navigation"
+  >
+    <div
+      class="flex items-center flex-col gap-2"
+    >
+      <div
+        aria-current="step"
+        aria-label="Passo 1: Atual"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-gradient-to-br from-accent-emerald to-accent-lime border-2 border-emerald-500-alpha-60 text-text-zinc-100 shadow-[0_0_20px_hsl(var(--ds-emerald-500-alpha-30))] w-12 h-12 text-base"
+      >
+        1
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-0.5 h-16"
+      />
+    </div>
+    <div
+      class="flex items-center flex-col gap-2"
+    >
+      <div
+        aria-label="Passo 2: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        2
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-0.5 h-16"
+      />
+    </div>
+    <div
+      class="flex items-center flex-col gap-2"
+    >
+      <div
+        aria-label="Passo 3: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stepper > Snapshots > snapshot: primeiro passo 1`] = `
+<div>
+  <div
+    aria-label="Progresso do formulário"
+    class="flex items-center justify-center flex-row gap-4"
+    role="navigation"
+  >
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 1: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        1
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 2: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        2
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 3: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stepper > Snapshots > snapshot: segundo passo 1`] = `
+<div>
+  <div
+    aria-label="Progresso do formulário"
+    class="flex items-center justify-center flex-row gap-4"
+    role="navigation"
+  >
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-current="step"
+        aria-label="Passo 1: Atual"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-gradient-to-br from-accent-emerald to-accent-lime border-2 border-emerald-500-alpha-60 text-text-zinc-100 shadow-[0_0_20px_hsl(var(--ds-emerald-500-alpha-30))] w-12 h-12 text-base"
+      >
+        1
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 2: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        2
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 3: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stepper > Snapshots > snapshot: último passo (completo) 1`] = `
+<div>
+  <div
+    aria-label="Progresso do formulário"
+    class="flex items-center justify-center flex-row gap-4"
+    role="navigation"
+  >
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 1: Concluído"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-gradient-to-br from-accent-emerald to-accent-lime border-2 border-emerald-500-alpha-60 text-text-zinc-100 shadow-[0_0_20px_hsl(var(--ds-emerald-500-alpha-30))] w-12 h-12 text-base"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-check w-5 h-5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 6 9 17l-5-5"
+          />
+        </svg>
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-gradient-to-r from-accent-emerald to-accent-lime w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-current="step"
+        aria-label="Passo 2: Atual"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-gradient-to-br from-accent-emerald to-accent-lime border-2 border-emerald-500-alpha-60 text-text-zinc-100 shadow-[0_0_20px_hsl(var(--ds-emerald-500-alpha-30))] w-12 h-12 text-base"
+      >
+        2
+      </div>
+      <div
+        aria-hidden="true"
+        class="transition-all duration-300 bg-zinc-400-alpha-20 w-16 h-0.5"
+      />
+    </div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        aria-label="Passo 3: Pendente"
+        class="flex items-center justify-center rounded-full font-bold transition-all duration-300 flex-shrink-0 bg-zinc-800-alpha-50 border-2 border-zinc-400-alpha-30 text-text-zinc-400 w-12 h-12 text-base"
+      >
+        3
+      </div>
+    </div>
+  </div>
+</div>
+`;
