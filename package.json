@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Design System library for carloshb.com.br projects",
   "type": "module",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "author": "Carlos H. Bernardes",
   "repository": {
     "type": "git",
