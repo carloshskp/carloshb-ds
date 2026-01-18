@@ -1,43 +1,40 @@
-# Source files (not needed in published package)
+# Source files
 src/
+*.ts
+*.tsx
+!*.d.ts
 
 # Test files
 **/*.test.ts
 **/*.test.tsx
-**/*.spec.ts
-**/*.spec.tsx
-__tests__/
-__snapshots__/
+**/__tests__/
+**/__snapshots__/
 coverage/
 
-# Config files
+# Build config
+vite.lib.config.ts
 vitest.config.ts
 vitest.setup.ts
 tsconfig.json
 tsconfig.build.json
-vite.lib.config.ts
-.npmrc
+postcss.config.js
+tailwind.config.js
+build-css.js
 
 # Development files
+.storybook/
 *.log
 .DS_Store
 node_modules/
 
-# Documentation (keep README.md via files field)
+# Documentation (mantém README.md e LICENSE via files)
 ARCHITECTURE.md
 CONTRIBUTING.md
-QUICK_START.md
+DEVELOPMENT.md
 PUBLISHING.md
+QUICK_START.md
+RELATORIO_ANALISE_NPM.md
+RELATORIO_ANALISE_NPM_DETALHADO.md
 
-# Git
-.git/
-.gitignore
-
-# IDE
-.vscode/
-.idea/
-
-# Yarn
-.yarn/
-.yarnrc.yml
-yarn.lock
+# CSS não usado (ds.css é gerado pelo Vite mas não é necessário)
+dist/ds.css
