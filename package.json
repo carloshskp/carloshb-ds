@@ -112,7 +112,11 @@
     "storybook": "storybook dev -p 6006",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
-    "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
+    "version:patch": "yarn version patch",
+    "version:minor": "yarn version minor",
+    "version:major": "yarn version major",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "design-system",
