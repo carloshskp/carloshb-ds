@@ -116,7 +116,7 @@
     "version:patch": "yarn version patch",
     "version:minor": "yarn version minor",
     "version:major": "yarn version major",
-    "build-storybook": "build-storybook --output-dir storybook-static"
+    "build-storybook": "storybook build -o storybook-static -c .storybook --disable-telemetry"
   },
   "keywords": [
     "design-system",
