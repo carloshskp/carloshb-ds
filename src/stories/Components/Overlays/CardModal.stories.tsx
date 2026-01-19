@@ -28,7 +28,7 @@ const CardModalCanvas = ({ title, showIcon, body }: CardModalStoryProps) => (
 );
 
 const meta = {
-  title: 'Feedback/CardModal',
+  title: 'Components/Overlays/CardModal',
   component: CardModalCanvas,
   tags: ['autodocs'],
   args: {

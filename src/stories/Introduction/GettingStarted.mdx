@@ -1,0 +1,103 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction/GettingStarted" />
+
+# Começando
+
+Guia rápido para instalar e começar a usar o Design System em seus projetos.
+
+## Instalação
+
+```bash
+npm install @carloshb/ds
+# ou
+yarn add @carloshb/ds
+# ou
+pnpm add @carloshb/ds
+```
+
+## Uso Básico
+
+### Importar Componentes
+
+```tsx
+import { Button, Input, Card } from '@carloshb/ds';
+```
+
+### Exemplo Básico
+
+```tsx
+import { Button } from '@carloshb/ds';
+
+function App() {
+  return (
+    <Button onClick={() => alert('Olá!')}>
+      Clique aqui
+    </Button>
+  );
+}
+```
+
+## Configuração
+
+### Estilos
+
+Certifique-se de importar os estilos CSS do design system:
+
+```tsx
+import '@carloshb/ds/styles';
+```
+
+### Tailwind CSS
+
+O design system usa Tailwind CSS. Certifique-se de ter o Tailwind configurado em seu projeto e que o conteúdo do design system esteja incluído:
+
+```js
+// tailwind.config.js
+module.exports = {
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './node_modules/@carloshb/ds/**/*.{js,jsx,ts,tsx}',
+  ],
+  // ... outras configurações
+};
+```
+
+## Estrutura de Componentes
+
+### Primitivos
+
+Componentes básicos de UI que podem ser usados diretamente:
+
+- `Button` - Botões
+- `Input` - Campos de entrada
+- `Textarea` - Campos de texto multilinha
+- `Card` - Cards e containers
+- `Badge` - Badges e tags
+- `Alert` - Alertas e notificações
+
+### Formulários
+
+Componentes para construção de formulários:
+
+- `Field` - Wrapper para campos com label, hint e erro
+- `Checkbox` - Checkboxes
+- `Radio` - Radio buttons
+
+### Navegação
+
+- `SideNav` - Menu lateral de navegação
+
+### Overlays
+
+- `CardModal` - Modais estilo card
+
+## TypeScript
+
+Todos os componentes são totalmente tipados. O TypeScript detectará automaticamente os tipos e props disponíveis.
+
+## Próximos Passos
+
+- Explore os [componentes primitivos](../Components/Primitives/Overview)
+- Veja exemplos de [formulários](../Components/Forms/FormControls)
+- Leia sobre [fundamentos de design](../Foundations/Foundations)

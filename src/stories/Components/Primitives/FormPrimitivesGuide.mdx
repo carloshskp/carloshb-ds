@@ -1,0 +1,68 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories';
+import * as FormControls from '../Forms/FormControls.stories';
+import * as ChoiceStories from '../Forms/Choices.stories';
+
+<Meta title="Components/Primitives/FormPrimitivesGuide" />
+
+# Primitivos de Formulário
+
+Coleção de componentes reutilizáveis para construção de formulários acessíveis e consistentes.
+
+## Botões
+
+<Canvas of={ButtonStories.Primary} sourceState="shown" />
+<Canvas of={ButtonStories.WithIcons} sourceState="shown" />
+
+- Variantes disponíveis: `primary`, `secondary`, `ghost`, `destructive`.
+- `isLoading` ativa spinner acessível (mantém largura e oculta texto com `sr-only`).
+- Para links estilizados como botão, use `LinkButton` ou `<Button asChild>` quando disponível.
+
+## Campos de Texto
+
+<Canvas of={FormControls.InputField} sourceState="shown" />
+<Canvas of={FormControls.TextareaField} sourceState="shown" />
+
+- Sempre combine `Input`/`Textarea` com `Field.Root` + `Field.Control` para garantir IDs e `aria-describedby`.
+- `invalid` pode ser passado direto para estados manuais, mas preferencialmente derive de `Field`.
+- Veja mais exemplos em [Input](./Input), [Textarea](./Textarea) e [Field](./Field).
+
+## Checkboxes e Radios
+
+<Canvas of={ChoiceStories.CheckboxList} sourceState="shown" />
+<Canvas of={ChoiceStories.RadioList} sourceState="shown" />
+
+- Usam inputs nativos com estilização customizada.
+- Labels aceitam descrição auxiliar para detalhar cada opção.
+- Quando agrupados, mantenha o grupo dentro de um `fieldset` + `legend` para semântica adicional.
+- Veja mais exemplos em [Checkbox](./Checkbox) e [Radio](./Radio).
+
+## Componente Field
+
+O componente `Field` é essencial para criar campos de formulário acessíveis:
+
+```tsx
+<Field.Root label="Email" hint="Seu email será usado para login" required>
+  <Field.Control>
+    <Input type="email" />
+  </Field.Control>
+</Field.Root>
+```
+
+- Gerencia automaticamente IDs, `aria-describedby`, `aria-invalid`
+- Suporta label, hint e mensagens de erro
+- Integra-se perfeitamente com Input, Textarea e outros controles
+
+## Acessibilidade
+
+- Todos os controles recebem `focus-visible` consistente (`--ds-focus-ring`).
+- `Field.Control` injeta automaticamente `aria-invalid`, `aria-describedby` e IDs.
+- Hit target mínimo: 44px (botões, checkbox/radio + padding).
+- Labels sempre associados aos controles via `htmlFor` ou contexto do Field.
+
+## Migração de Formulários Existentes
+
+1. Reutilize `Field.Root` para cada campo.
+2. Substitua classes customizadas pelos novos componentes primitivos.
+3. Use `Button` (variants `secondary` e `primary`) para ações.
+4. Descontinue CSS duplicado conforme refatorar para os primitives.

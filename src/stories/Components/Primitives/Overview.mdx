@@ -1,0 +1,109 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Components/Primitives/Overview" />
+
+# Componentes Primitivos
+
+Os componentes primitivos são os elementos básicos de UI que formam a base do design system.
+
+## Visão Geral
+
+Os componentes primitivos são projetados para serem:
+
+- **Composáveis**: Podem ser combinados para criar componentes mais complexos
+- **Acessíveis**: Seguem padrões WCAG e incluem suporte ARIA
+- **Customizáveis**: Suportam variantes e props para diferentes casos de uso
+- **Type-safe**: Totalmente tipados com TypeScript
+
+## Categorias
+
+### Elementos de Texto
+
+Componentes para exibir texto e títulos:
+
+- **[Heading](./Text)**: Títulos de diferentes níveis (h1-h6)
+- **[Paragraph](./Text)**: Parágrafos de texto
+- **[Label](./Text)**: Labels para formulários
+- **[Text](./Text)**: Texto genérico com variantes
+
+### Botões e Ações
+
+- **[Button](./Button)**: Botões principais e secundários
+- **[LinkButton](./LinkButton)**: Links estilizados como botões
+
+### Formulários
+
+- **[Input](./Input)**: Campos de entrada de texto
+- **[Textarea](./Textarea)**: Campos de texto multilinha
+- **[Checkbox](./Checkbox)**: Checkboxes
+- **[Radio](./Radio)**: Radio buttons
+- **[Field](./Field)**: Wrapper para campos com label, hint e erro
+
+### Containers
+
+- **[Card](./Card)**: Cards e containers com glassmorphism
+- **[Container](./Container)**: Container principal com efeitos visuais
+- **[Section](./Section)**: Seções com header e conteúdo
+
+### Feedback
+
+- **[Alert](./Alert)**: Alertas e notificações
+- **[Badge](./Badge)**: Badges e tags
+
+### Navegação
+
+- **[Stepper](./Stepper)**: Indicador de progresso em etapas
+
+## Padrões de Uso
+
+### Composição
+
+Os componentes primitivos são projetados para serem compostos:
+
+```tsx
+<Card>
+  <Card.Header>
+    <Heading>Título</Heading>
+  </Card.Header>
+  <Card.Content>
+    <Paragraph>Conteúdo do card</Paragraph>
+  </Card.Content>
+</Card>
+```
+
+### Formulários
+
+Use `Field` para criar campos de formulário acessíveis:
+
+```tsx
+<Field.Root label="Email" hint="Seu email será usado para login" required>
+  <Field.Control>
+    <Input type="email" />
+  </Field.Control>
+</Field.Root>
+```
+
+### Variantes
+
+Muitos componentes suportam variantes:
+
+```tsx
+<Button variant="primary">Primário</Button>
+<Button variant="secondary">Secundário</Button>
+<Alert variant="success">Sucesso</Alert>
+<Alert variant="error">Erro</Alert>
+```
+
+## Acessibilidade
+
+Todos os componentes primitivos incluem:
+
+- Suporte ARIA adequado
+- Navegação por teclado
+- Foco visível
+- Contraste adequado
+- Labels descritivos
+
+## Próximos Passos
+
+Explore os componentes individuais para ver exemplos detalhados e documentação completa de props e uso.

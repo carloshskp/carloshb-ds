@@ -31,7 +31,7 @@ const FormControlCanvas = ({
 );
 
 const meta = {
-  title: 'Primitives/Input & Textarea',
+  title: 'Components/Forms/FormControls',
   component: FormControlCanvas,
   tags: ['autodocs'],
   args: {

@@ -18,7 +18,7 @@ const SideNavCanvas = ({ path }: SideNavStoryProps) => (
 );
 
 const meta = {
-  title: 'Navigation/SideNav',
+  title: 'Components/Navigation/SideNav',
   component: SideNavCanvas,
   tags: ['autodocs'],
   args: {

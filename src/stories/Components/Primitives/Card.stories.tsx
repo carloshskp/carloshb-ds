@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/primitives/button';
 import { User, Briefcase, GraduationCap, Code, ArrowRight } from 'lucide-react';
 
 const meta = {
-  title: 'Primitives/Card',
+  title: 'Components/Primitives/Card',
   component: Card,
   parameters: {
     layout: 'centered',

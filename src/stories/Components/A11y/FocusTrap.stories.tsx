@@ -59,7 +59,7 @@ const FocusTrapCanvas = ({ isActive }: FocusTrapStoryProps) => {
 };
 
 const meta = {
-  title: 'A11y/FocusTrap',
+  title: 'Components/A11y/FocusTrap',
   component: FocusTrapCanvas,
   tags: ['autodocs'],
   args: {

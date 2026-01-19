@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/primitives/button';
 import { User, Sparkles, Zap, Globe, Shield, TrendingUp, ArrowRight } from 'lucide-react';
 
 const meta = {
-  title: 'Primitives/Section',
+  title: 'Components/Primitives/Section',
   component: Section,
   parameters: {
     layout: 'centered',

@@ -4,7 +4,7 @@ import { ArrowRight, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/primitives';
 
 const meta = {
-  title: 'Primitives/Button',
+  title: 'Components/Primitives/Button',
   component: Button,
   tags: ['autodocs'],
   args: {

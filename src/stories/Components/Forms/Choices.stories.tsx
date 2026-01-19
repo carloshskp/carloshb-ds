@@ -54,7 +54,7 @@ const RadioGroup = ({ options }: RadioGroupProps) => {
 };
 
 const meta = {
-  title: 'Primitives/Checkbox & Radio',
+  title: 'Components/Forms/Choices',
   component: Checkbox,
   tags: ['autodocs'],
   parameters: {

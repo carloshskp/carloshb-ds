@@ -3,7 +3,7 @@ import { Alert } from '@/components/ui/primitives/alert';
 import { Zap } from 'lucide-react';
 
 const meta = {
-  title: 'Primitives/Alert',
+  title: 'Components/Primitives/Alert',
   component: Alert,
   parameters: {
     layout: 'centered',

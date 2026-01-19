@@ -1,0 +1,106 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Foundations/DesignTokens" />
+
+# Design Tokens
+
+Os design tokens são os valores fundamentais que definem a identidade visual do design system.
+
+## Cores
+
+### Cores Primárias
+
+O design system utiliza uma paleta de cores baseada em tons de zinco e acentos:
+
+- **Background**: Superfícies e fundos com efeito glassmorphism
+- **Text**: Cores de texto com diferentes níveis de contraste
+- **Border**: Bordas e divisores
+- **Accent**: Cores de destaque e ações primárias
+- **Destructive**: Cores para ações destrutivas e erros
+
+### Cores de Input
+
+- `input-bg`: Fundo dos campos de entrada
+- `input-border`: Borda dos campos
+- `input-text`: Cor do texto nos campos
+
+### Cores de Foco
+
+- `focus-ring`: Anel de foco para acessibilidade
+- `focus-ring-offset`: Offset do anel de foco
+
+## Espaçamento
+
+O sistema utiliza uma escala de espaçamento baseada em múltiplos de 4px:
+
+- `space-1`: 4px
+- `space-2`: 8px
+- `space-3`: 12px
+- `space-4`: 16px
+- `space-6`: 24px
+- `space-8`: 32px
+- `space-12`: 48px
+
+## Tipografia
+
+### Tamanhos de Texto
+
+- `text-xs`: 12px
+- `text-sm`: 14px
+- `text-base`: 16px
+- `text-lg`: 18px
+- `text-xl`: 20px
+- `text-2xl`: 24px
+- `text-3xl`: 30px
+- `text-4xl`: 36px
+
+### Pesos de Fonte
+
+- `font-normal`: 400
+- `font-medium`: 500
+- `font-semibold`: 600
+- `font-bold`: 700
+
+## Bordas
+
+- `border-radius-sm`: 4px
+- `border-radius-md`: 8px
+- `border-radius-lg`: 12px
+- `border-radius-xl`: 16px
+
+## Sombras
+
+O design system utiliza sombras sutis para criar profundidade:
+
+- `shadow-sm`: Sombra pequena
+- `shadow-md`: Sombra média
+- `shadow-lg`: Sombra grande
+- `shadow-inner`: Sombra interna (usada em inputs)
+
+## Transições
+
+Todas as transições seguem um padrão consistente:
+
+- `transition-all`: Transição em todas as propriedades
+- `duration-200`: Duração de 200ms
+- `ease-in-out`: Curva de animação suave
+
+## Glassmorphism
+
+O design system utiliza efeitos de glassmorphism:
+
+- `bg-surface-glass`: Fundo com efeito de vidro
+- `backdrop-blur`: Desfoque de fundo
+- `bg-zinc-800-alpha-50`: Fundo semi-transparente
+
+## Uso em CSS
+
+Os tokens podem ser usados diretamente nas classes Tailwind ou como variáveis CSS:
+
+```css
+.custom-component {
+  background-color: var(--color-surface-glass);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+```

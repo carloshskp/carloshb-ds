@@ -4,7 +4,7 @@ import { LinkButton, ExternalLinkButton } from '@/components/ui/primitives/link-
 import { ArrowRight, ArrowLeft, Linkedin } from 'lucide-react';
 
 const meta = {
-  title: 'Primitives/LinkButton',
+  title: 'Components/Primitives/LinkButton',
   component: LinkButton,
   parameters: {
     layout: 'centered',

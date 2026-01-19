@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Stepper } from '@/components/ui/primitives/stepper';
 
 const meta = {
-  title: 'Primitives/Stepper',
+  title: 'Components/Primitives/Stepper',
   component: Stepper,
   parameters: {
     layout: 'centered',

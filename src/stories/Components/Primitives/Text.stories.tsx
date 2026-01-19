@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Heading, Paragraph, Label, Text } from '@/components/ui/primitives/text';
 
 const headingMeta = {
-  title: 'Primitives/Text/Heading',
+  title: 'Components/Primitives/Text/Heading',
   component: Heading,
   tags: ['autodocs'],
   args: {
@@ -68,7 +68,7 @@ export const CustomSizes: HeadingStory = {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const paragraphMeta = {
-  title: 'Primitives/Text/Paragraph',
+  title: 'Components/Primitives/Text/Paragraph',
   component: Paragraph,
   tags: ['autodocs'],
   args: {
@@ -125,7 +125,7 @@ export const ParagraphVariants: StoryObj<ParagraphMeta> = {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const labelMeta = {
-  title: 'Primitives/Text/Label',
+  title: 'Components/Primitives/Text/Label',
   component: Label,
   tags: ['autodocs'],
   args: {
@@ -176,7 +176,7 @@ export const LabelVariants: StoryObj<LabelMeta> = {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const textMeta = {
-  title: 'Primitives/Text/Text',
+  title: 'Components/Primitives/Text/Text',
   component: Text,
   tags: ['autodocs'],
   args: {

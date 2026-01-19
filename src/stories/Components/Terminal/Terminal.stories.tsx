@@ -48,7 +48,7 @@ const TerminalExample = ({
 );
 
 const meta = {
-  title: 'Components/Terminal/Playground',
+  title: 'Components/Terminal/Terminal',
   component: TerminalExample,
   tags: ['autodocs'],
   args: {

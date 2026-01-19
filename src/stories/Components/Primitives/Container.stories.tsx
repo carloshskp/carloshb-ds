@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/primitives/button';
 import { CheckCircle2 } from 'lucide-react';
 
 const meta = {
-  title: 'Primitives/Container',
+  title: 'Components/Primitives/Container',
   component: Container,
   parameters: {
     layout: 'centered',

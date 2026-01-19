@@ -1,0 +1,101 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Foundations/Theming" />
+
+# Theming
+
+O design system suporta customização de temas através de variáveis CSS e classes Tailwind.
+
+## Variáveis CSS
+
+O tema é definido através de variáveis CSS customizadas. Você pode sobrescrever essas variáveis para criar temas personalizados:
+
+```css
+:root {
+  --color-accent-amber: #f59e0b;
+  --color-destructive: #ef4444;
+  --color-surface-glass: rgba(39, 39, 42, 0.8);
+  /* ... outras variáveis */
+}
+```
+
+## Customização de Cores
+
+### Cores de Acento
+
+Para alterar a cor de destaque (accent):
+
+```css
+:root {
+  --color-accent-amber: #sua-cor-aqui;
+}
+```
+
+### Cores de Texto
+
+```css
+:root {
+  --color-text-zinc-200: #e4e4e7;
+  --color-text-zinc-400: #a1a1aa;
+}
+```
+
+### Cores de Background
+
+```css
+:root {
+  --color-surface-glass: rgba(39, 39, 42, 0.8);
+  --color-input-bg: rgba(24, 24, 27, 0.5);
+}
+```
+
+## Modo Escuro
+
+O design system é otimizado para modo escuro por padrão. As variáveis CSS já estão configuradas para criar um tema escuro consistente.
+
+## Aplicando Tema Customizado
+
+### Via CSS
+
+```css
+/* seu-arquivo.css */
+:root {
+  --color-accent-amber: #10b981; /* Verde ao invés de âmbar */
+}
+```
+
+### Via Tailwind Config
+
+Você também pode estender o tema no Tailwind:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'accent-amber': '#sua-cor',
+      },
+    },
+  },
+};
+```
+
+## Componentes com Variantes
+
+Muitos componentes suportam variantes que podem ser customizadas:
+
+```tsx
+<Button variant="primary">Botão</Button>
+<Button variant="secondary">Botão</Button>
+<Alert variant="success">Sucesso</Alert>
+<Alert variant="error">Erro</Alert>
+```
+
+## Consistência Visual
+
+Ao customizar o tema, mantenha:
+
+- **Contraste adequado**: Garanta que o texto seja legível
+- **Consistência**: Use as mesmas cores em contextos similares
+- **Acessibilidade**: Mantenha os padrões WCAG de contraste
