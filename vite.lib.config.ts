@@ -19,6 +19,9 @@ export default defineConfig({
       outDir: 'dist/types',
       rollupTypes: true,
       entryRoot: 'src',
+      rollupOptions: {
+        typescriptCompilerFolder: path.resolve(__dirname, 'node_modules/typescript'),
+      },
     }),
     // Plugin para remover ds.css após o build
     {
