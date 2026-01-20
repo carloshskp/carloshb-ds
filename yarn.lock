@@ -296,7 +296,7 @@ __metadata:
     react-router-dom: ^7.0.0
   peerDependenciesMeta:
     react-router-dom:
-      optional: true
+      optional: false
   languageName: unknown
   linkType: soft
 
