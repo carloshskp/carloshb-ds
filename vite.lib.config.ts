@@ -48,6 +48,8 @@ export default defineConfig({
     },
   ],
   build: {
+    // Target para compatibilidade de browsers (ES2020 suporta dynamic import, optional chaining, nullish coalescing)
+    target: 'es2020',
     lib: {
       entry: {
         index: path.resolve(__dirname, 'src/public-api/index.ts'),
@@ -57,6 +59,8 @@ export default defineConfig({
       },
       formats: ['es'],
       fileName: (format, entryName) => `${entryName}.js`,
+      // Nome explícito para o arquivo CSS gerado
+      cssFileName: 'styles',
     },
     rollupOptions: {
       // Externalizar peerDependencies (não são bundled, fornecidas pelo consumidor)
@@ -83,6 +87,8 @@ export default defineConfig({
     emptyOutDir: true,
     // CSS code splitting desabilitado para gerar um único arquivo CSS
     cssCodeSplit: false,
+    // Reportar tamanho comprimido no output do build
+    reportCompressedSize: true,
   },
   css: {
     postcss: './postcss.config.js',
