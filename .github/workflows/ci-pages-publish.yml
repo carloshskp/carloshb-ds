@@ -15,19 +15,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Corepack + Yarn 4.12
+      - name: Node 24
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Corepack
         run: |
           corepack enable
           corepack prepare yarn@4.12.0 --activate
 
-      - name: Node 24 + Yarn cache
-        uses: actions/setup-node@v5
-        with:
-          node-version: 24
-          cache: 'yarn'
-
       - name: Install
-        run: NODE_ENV=development yarn install
+        run: yarn install --immutable --frozen-lockfile
 
       - name: Test/Lint
         run: |
