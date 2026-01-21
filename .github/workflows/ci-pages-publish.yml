@@ -40,7 +40,7 @@ jobs:
           node-version: 24
 
       - name: Install
-        run: yarn install --production=false --ignore-engines
+        run: NODE_ENV=development yarn install
 
       # Se não existir script test/lint, remova este step
       - name: Test/Lint
