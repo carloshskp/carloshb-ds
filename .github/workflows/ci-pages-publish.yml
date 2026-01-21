@@ -19,37 +19,32 @@ jobs:
         run: |
           corepack enable
           corepack prepare yarn@4.12.0 --activate
-          yarn --version
 
-      # Cache do Yarn (agora que Yarn 4 está ativo)
-      - name: Get Yarn cache folder
-        id: yarn-cache
-        run: echo "dir=$(yarn config get cacheFolder)" >> "$GITHUB_OUTPUT"
-
-      - name: Cache Yarn
-        uses: actions/cache@v4
-        with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-yarn4-${{ hashFiles('yarn.lock', '.yarnrc.yml', 'package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn4-
-
-      - name: Node 24
+      - name: Node 24 + Yarn cache
         uses: actions/setup-node@v5
         with:
           node-version: 24
+          cache: 'yarn'
 
       - name: Install
         run: NODE_ENV=development yarn install
 
-      # Se não existir script test/lint, remova este step
       - name: Test/Lint
         run: |
           yarn test
           yarn lint
 
-      - name: Build lib/app (Vite)
+      - name: Build lib (Vite)
         run: yarn build
+
+      - name: Validate build output
+        run: |
+          if [ ! -d "dist" ] || [ -z "$(ls -A dist)" ]; then
+            echo "Error: dist/ folder is empty or missing"
+            exit 1
+          fi
+          echo "Build output validated:"
+          ls -la dist/
 
       - name: Build Storybook
         run: yarn build-storybook
@@ -61,6 +56,13 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: storybook-static
+
+      - name: Upload dist artifact (npm)
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
 
   deploy-pages:
     runs-on: ubuntu-latest
@@ -92,36 +94,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Node sem cache Yarn (mesmo motivo)
       - name: Node 24 + registry npmjs
         uses: actions/setup-node@v5
         with:
           node-version: 24
           registry-url: "https://registry.npmjs.org"
 
-      - name: Corepack + Yarn 4.12
-        run: |
-          corepack enable
-          corepack prepare yarn@4.12.0 --activate
-          yarn --version
-
-      # Cache Yarn
-      - name: Get Yarn cache folder
-        id: yarn-cache
-        run: echo "dir=$(yarn config get cacheFolder)" >> "$GITHUB_OUTPUT"
-
-      - name: Cache Yarn
-        uses: actions/cache@v4
+      - name: Download dist artifact
+        uses: actions/download-artifact@v4
         with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-yarn4-${{ hashFiles('yarn.lock', '.yarnrc.yml', 'package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn4-
+          name: dist
+          path: dist/
 
-      - name: Install + Build
+      - name: Validate dist artifact
         run: |
-          yarn install --immutable
-          yarn build
+          echo "Downloaded dist contents:"
+          ls -la dist/
 
       - name: Decide se deve publicar (versão ainda não existe no npm)
         id: ver
