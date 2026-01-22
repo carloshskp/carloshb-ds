@@ -15,11 +15,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Extract version
-        id: version
+      - name: Extract version and name
+        id: pkg-info
         run: |
-          echo 'version=$(node -p "require(\'./package.json\').version")' >> "$GITHUB_OUTPUT"
-          echo 'name=$(node -p "require(\'./package.json\').name")' >> "$GITHUB_OUTPUT"
+          echo 'version=$(jq -r ".version" package.json)' >> "$GITHUB_OUTPUT"
+          echo 'name=$(jq -r ".name" package.json)' >> "$GITHUB_OUTPUT"
       - name: Node 24
         uses: actions/setup-node@v4
         with:
@@ -101,8 +101,8 @@ jobs:
       - name: Publish (npm)
         shell: bash
         run: |
-          PKG_NAME="${{ steps.version.outputs.name }}"
-          PKG_VERSION="${{ steps.version.outputs.version }}"
+          PKG_NAME="${{ steps.pkg-info.outputs.name }}"
+          PKG_VERSION="${{ steps.pkg-info.outputs.version }}"
           ARGS=""
 
           # Se for scope e público, precisa access public (ou defina publishConfig.access)
