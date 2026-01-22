@@ -121,9 +121,9 @@
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
-    "version:patch": "yarn version patch",
-    "version:minor": "yarn version minor",
-    "version:major": "yarn version major",
+    "version:patch": "yarn version patch && ./bin/release.sh",
+    "version:minor": "yarn version minor && ./bin/release.sh",
+    "version:major": "yarn version major && ./bin/release.sh",
     "build-storybook": "storybook build -o storybook-static -c .storybook --disable-telemetry"
   },
   "keywords": [
