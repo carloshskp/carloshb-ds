@@ -93,6 +93,8 @@ jobs:
     needs: build
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Download dist artifact
         uses: actions/download-artifact@v4
         with:
@@ -109,7 +111,6 @@ jobs:
           PKG_VERSION="${{ needs.build.outputs.pkg-version }}"
           ARGS=""
 
-          # Se for scope e público, precisa access public (ou defina publishConfig.access)
           if [[ "$PKG_NAME" == @* ]]; then
             ARGS="--access public"
           fi
