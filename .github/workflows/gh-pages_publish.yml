@@ -44,14 +44,6 @@ jobs:
       - name: Build Storybook
         run: yarn build-storybook --quiet --output-dir storybook-static --disable-telemetry
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Storybook artifact to GitHub Pages
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: storybook-static  
-
   deploy-pages:
     runs-on: ubuntu-latest
     needs: build
@@ -70,11 +62,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Download Storybook artifact
-        uses: actions/download-artifact@v4
-        with:
-          path: storybook-static
-          name: storybook-static
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Deploy Storybook to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
