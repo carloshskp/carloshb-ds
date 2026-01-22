@@ -1,0 +1,49 @@
+name: Publish GitHub Pages
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js@24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Enable Corepack
+        run: |
+          corepack enable
+          corepack prepare yarn@4.12.0 --activate
+      - name: Install dependencies
+        run: yarn install --immutable --frozen-lockfile
+      - name: Test and lint test
+        run: |
+          yarn test
+          yarn lint
+
+      - name: Build Storybook
+        run: yarn build-storybook --quiet --output-dir storybook-static --disable-telemetry
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          branch: master
+          folder: storybook-static

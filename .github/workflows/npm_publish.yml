@@ -1,0 +1,43 @@
+name: Publish npm
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Extract package.json values to environment variables
+        run: |
+          echo "name=$(jq -r '.name' package.json)" >> "$GITHUB_ENV"
+          echo "version=$(jq -r '.version' package.json)" >> "$GITHUB_ENV"
+      - name: Setup Node.js@24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Enable Corepack
+        run: |
+          corepack enable
+          corepack prepare yarn@4.12.0 --activate
+      - name: Install dependencies
+        run: yarn install --immutable --frozen-lockfile
+      - name: Test and lint test
+        run: |
+          yarn test
+          yarn lint
+      - name: Publish to npm
+        shell: bash
+        run: |
+          PKG_NAME="${{ env.name }}"
+          PKG_VERSION="${{ env.version }}"
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

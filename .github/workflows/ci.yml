@@ -1,0 +1,58 @@
+name: CI + Storybook Pages + Publish npm
+
+on:
+  push:
+    branches: [master]
+
+# Permissão mínima global; cada job eleva só o que precisa
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js@24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Enable Corepack
+        run: |
+          corepack enable
+          corepack prepare yarn@4.12.0 --activate
+      - name: Install dependencies
+        run: yarn install --immutable --frozen-lockfile
+      - name: Test and lint test
+        run: |
+          yarn test
+          yarn lint
+      - name: Build library (Vite)
+        run: yarn build
+      - name: Validate build output
+        run: |
+          if [ ! -d "dist" ] || [ -z "$(ls -A dist)" ]; then
+            echo "Error: dist/ folder is empty or missing"
+            exit 1
+          fi
+          echo "Build output validated:"
+          ls -la dist/
+      - name: Build Storybook
+        run: yarn build-storybook --quiet --output-dir storybook-static --disable-telemetry
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Storybook artifact to GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: storybook-static
+
+      - name: Upload dist artifact to npm
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
