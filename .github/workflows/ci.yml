@@ -1,10 +1,9 @@
-name: CI + Storybook Pages + Publish npm
+name: CI - Build and test
 
 on:
   push:
     branches: [master]
 
-# Permissão mínima global; cada job eleva só o que precisa
 permissions:
   contents: read
 
@@ -41,18 +40,3 @@ jobs:
           ls -la dist/
       - name: Build Storybook
         run: yarn build-storybook --quiet --output-dir storybook-static --disable-telemetry
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Storybook artifact to GitHub Pages
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: storybook-static
-
-      - name: Upload dist artifact to npm
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: dist/
-          retention-days: 1
