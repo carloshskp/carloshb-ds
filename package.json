@@ -9,7 +9,7 @@
   "website": "https://carloshb.com.br",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carloshskp/carloshb-ds.git"
+    "url": "git+https://github.com/carloshskp/carloshb-ds.git"
   },
   "homepage": "https://storybook.carloshb.com.br",
   "bugs": {
