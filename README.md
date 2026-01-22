@@ -1,5 +1,7 @@
 # @carloshb/ds
 
+[![CI - Build and test](https://github.com/carloshskp/carloshb-ds/actions/workflows/ci.yml/badge.svg)](https://github.com/carloshskp/carloshb-ds/actions/workflows/ci.yml) [![GitHub Pages - Publish Storybook](https://github.com/carloshskp/carloshb-ds/actions/workflows/gh-pages_publish.yml/badge.svg)](https://github.com/carloshskp/carloshb-ds/actions/workflows/gh-pages_publish.yml) [![Publish NPM package](https://github.com/carloshskp/carloshb-ds/actions/workflows/npm_publish.yml/badge.svg)](https://github.com/carloshskp/carloshb-ds/actions/workflows/npm_publish.yml)
+
 Design System library para projetos carloshb.com.br. Componentes React reutilizáveis, tokens de design e estilos padronizados.
 
 ## Instalação
