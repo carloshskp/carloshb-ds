@@ -101,7 +101,7 @@ A biblioteca requer as seguintes dependências no projeto consumidor:
 
 ## Documentação
 
-Documentação completa disponível em: [Storybook](https://storybook.carloshb.com.br)
+Documentação completa disponível em: [Storybook](https://storybook.carloshb.cloud)
 
 ## Licença
 

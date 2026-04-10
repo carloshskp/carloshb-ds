@@ -40,7 +40,7 @@ Bem-vindo à documentação completa do **@carloshb/ds**. Este guia fornece toda
 
 ## Recursos Externos
 
-- 📖 [Storybook](https://storybook.carloshb.com.br) - Documentação interativa
+- 📖 [Storybook](https://storybook.carloshb.cloud) - Documentação interativa
 - 🐛 [GitHub Issues](https://github.com/carloshskp/carloshb-ds/issues) - Reportar problemas
 - 💬 [GitHub Discussions](https://github.com/carloshskp/carloshb-ds/discussions) - Discussões da comunidade
 - 📦 [NPM Package](https://www.npmjs.com/package/@carloshb/ds) - Pacote no NPM

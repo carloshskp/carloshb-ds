@@ -88,7 +88,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 - Atributos ARIA automáticos
 - Estados visuais claros para foco e desabilitado
 
-**Storybook**: [Button Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Button Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -147,7 +147,7 @@ type CardFooterProps = HTMLAttributes<HTMLDivElement>;
 <Card variant="outline">Outline</Card>
 ```
 
-**Storybook**: [Card Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Card Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -198,7 +198,7 @@ interface AlertProps {
 </Alert>
 ```
 
-**Storybook**: [Alert Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Alert Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -230,7 +230,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 <Input disabled value="Valor desabilitado" />
 ```
 
-**Storybook**: [Input Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Input Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -264,7 +264,7 @@ interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 />
 ```
 
-**Storybook**: [Textarea Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Textarea Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -301,7 +301,7 @@ interface CheckboxProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'typ
 <Label htmlFor="custom">Label customizado</Label>
 ```
 
-**Storybook**: [Checkbox Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Checkbox Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -331,7 +331,7 @@ interface RadioProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>
 <Radio name="option" value="3" label="Opção 3" />
 ```
 
-**Storybook**: [Radio Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Radio Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -373,7 +373,7 @@ interface FieldProps {
 </Field>
 ```
 
-**Storybook**: [Field Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Field Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -407,7 +407,7 @@ interface BadgeProps {
 <Badge variant="info">Info</Badge>
 ```
 
-**Storybook**: [Badge Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Badge Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -439,7 +439,7 @@ interface ContainerProps {
 </Container>
 ```
 
-**Storybook**: [Container Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Container Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -460,7 +460,7 @@ import { LinkButton, ExternalLinkButton } from '@carloshb/ds';
 <ExternalLinkButton href="https://example.com">Site externo</ExternalLinkButton>
 ```
 
-**Storybook**: [LinkButton Stories](https://storybook.carloshb.com.br)
+**Storybook**: [LinkButton Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -485,7 +485,7 @@ import { Section, SectionHeader } from '@carloshb/ds';
 </Section>
 ```
 
-**Storybook**: [Section Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Section Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -516,7 +516,7 @@ import { Stepper, StepperItem, StepperNumber, StepperLine } from '@carloshb/ds';
 </Stepper>
 ```
 
-**Storybook**: [Stepper Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Stepper Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -545,7 +545,7 @@ import { Heading, Paragraph, Label, Text } from '@carloshb/ds';
 <Text variant="destructive">Texto de erro</Text>
 ```
 
-**Storybook**: [Text Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Text Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -572,7 +572,7 @@ import { TerminalContainer } from '@carloshb/ds/terminal';
 </TerminalContainer>
 ```
 
-**Storybook**: [Terminal Stories](https://storybook.carloshb.com.br)
+**Storybook**: [Terminal Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -616,7 +616,7 @@ const [isOpen, setIsOpen] = useState(false);
 </CardModal>
 ```
 
-**Storybook**: [CardModal Stories](https://storybook.carloshb.com.br)
+**Storybook**: [CardModal Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -632,7 +632,7 @@ Navegação lateral.
 import { SideNav } from '@carloshb/ds';
 ```
 
-**Storybook**: [SideNav Stories](https://storybook.carloshb.com.br)
+**Storybook**: [SideNav Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -658,7 +658,7 @@ import { FocusTrap } from '@carloshb/ds';
 </FocusTrap>
 ```
 
-**Storybook**: [FocusTrap Stories](https://storybook.carloshb.com.br)
+**Storybook**: [FocusTrap Stories](https://storybook.carloshb.cloud)
 
 ---
 
@@ -707,4 +707,4 @@ Para mais detalhes, consulte o [Guia de Acessibilidade](./ACCESSIBILITY.md).
 - [Design Tokens](./DESIGN_TOKENS.md) - Customização visual
 - [Estilização](./STYLING.md) - Guia de estilos
 - [Exemplos](./EXAMPLES.md) - Padrões e receitas
-- [Storybook](https://storybook.carloshb.com.br) - Documentação interativa
+- [Storybook](https://storybook.carloshb.cloud) - Documentação interativa

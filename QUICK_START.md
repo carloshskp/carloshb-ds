@@ -294,7 +294,7 @@ Agora que você configurou o Design System:
 1. **Explore os Componentes**: Veja a [documentação completa de componentes](./docs/COMPONENTS.md)
 2. **Customize os Tokens**: Aprenda sobre [Design Tokens](./docs/DESIGN_TOKENS.md)
 3. **Veja Exemplos**: Confira [receitas e padrões](./docs/EXAMPLES.md)
-4. **Storybook**: Explore a [documentação interativa](https://storybook.carloshb.com.br)
+4. **Storybook**: Explore a [documentação interativa](https://storybook.carloshb.cloud)
 
 ## Recursos Adicionais
 
@@ -302,4 +302,4 @@ Agora que você configurou o Design System:
 - [Documentação de Componentes](./docs/COMPONENTS.md) - Referência de API
 - [Design Tokens](./docs/DESIGN_TOKENS.md) - Sistema de tokens
 - [Exemplos](./docs/EXAMPLES.md) - Padrões e receitas
-- [Storybook](https://storybook.carloshb.com.br) - Documentação interativa
+- [Storybook](https://storybook.carloshb.cloud) - Documentação interativa

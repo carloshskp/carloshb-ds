@@ -195,7 +195,7 @@ O Design System suporta temas customizados através de variáveis CSS:
 ## Tokens Disponíveis
 
 Para ver todos os tokens disponíveis, consulte:
-- [Storybook - Design Tokens](https://storybook.carloshb.com.br)
+- [Storybook - Design Tokens](https://storybook.carloshb.cloud)
 - Arquivo de tokens: `src/tokens/index.ts`
 
 ## Boas Práticas
@@ -208,4 +208,4 @@ Para ver todos os tokens disponíveis, consulte:
 ## Recursos Adicionais
 
 - [Estilização](./STYLING.md) - Guia completo de estilos
-- [Theming no Storybook](https://storybook.carloshb.com.br) - Explore tokens interativamente
+- [Theming no Storybook](https://storybook.carloshb.cloud) - Explore tokens interativamente

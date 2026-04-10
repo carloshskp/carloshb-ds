@@ -431,4 +431,4 @@ function DataDisplay({ error, data }: { error?: Error; data?: Data }) {
 ## Recursos Adicionais
 
 - [Componentes](./COMPONENTS.md) - Documentação completa
-- [Storybook](https://storybook.carloshb.com.br) - Mais exemplos interativos
+- [Storybook](https://storybook.carloshb.cloud) - Mais exemplos interativos

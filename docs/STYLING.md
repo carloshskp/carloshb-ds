@@ -242,4 +242,4 @@ Verifique:
 
 - [Design Tokens](./DESIGN_TOKENS.md) - Sistema de tokens
 - [Componentes](./COMPONENTS.md) - Documentação de componentes
-- [Storybook](https://storybook.carloshb.com.br) - Explore estilos interativamente
+- [Storybook](https://storybook.carloshb.cloud) - Explore estilos interativamente
